@@ -1,0 +1,302 @@
+@use '../mixins/mixins.scss' as *;
+@use '../vars/vars.scss' as *;
+
+.farmers {
+    background-color: #f9f8f8;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    &__content {
+        display: flex;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        padding-top: 80px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+
+
+        &-up {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                padding-bottom: 15px;
+                font-size: 36px;
+                color: #7EB693;
+                font-family: "Yellowtail";
+            }
+
+            h3 {
+                @include title;
+                max-width: 702px;
+                color: $title;
+                padding-bottom: 25px;
+
+            }
+
+            p {
+                margin: 0;
+                max-width: 690px;
+                color: $description;
+                @include description;
+
+            }
+        }
+
+        &-down {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 20px;
+
+            button {
+                display: flex;
+                gap: 25px;
+                align-items: center;
+                justify-content: center;
+                gap: 10PX;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+                border: 0;
+                border-radius: 16px;
+                background-color: #274C5B;
+                width: 40%;
+                padding: 28px 49px;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            &-first {
+                display: flex;
+                gap: 20px;
+
+                img {
+                    width: 101px;
+                    height: 101px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                &-description {
+                    display: flex;
+                    flex-direction: column;
+
+                    h2 {
+                        @include title-2;
+                        max-width: 320px;
+                        color: $title;
+
+                    }
+
+                    p {
+                        @include description;
+                        max-width: 444px;
+                        color: $description;
+                    }
+                }
+            }
+
+            &-second {
+                display: flex;
+                gap: 20px;
+
+                img {
+                    width: 101px;
+                    height: 101px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    &-description {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        h2 {
+                            font-size: 25px;
+                            font-weight: 800;
+                            max-width: 220px;
+                            line-height: 100%;
+                            color: #274C5B;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 165%;
+                            max-width: 444px;
+                            color: #525C60;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #335B6B;
+        border-radius: 60px;
+        padding: 6px 10px 10px 8px;
+    }
+}
+
+@media (max-width:1630px) {
+    .farmers {
+        &__content {
+            gap: 0px;
+        }
+
+        &__left {
+            width: 50%;
+            height: auto;
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__right {
+            
+            padding: 50px 10px 50px 0px;
+            width: 50%;
+            align-items: center;
+
+            &-up {
+                align-items: center;
+
+            }
+
+
+            button {
+                width: 90%;
+                transition: 0s;
+
+                &:hover {
+                    transform: scale(1.0);
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 1000px) {
+        .farmers {
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            &__left {
+                width: 96%;
+                height: auto;
+            }
+
+            &__right {
+                padding-bottom: 20px;
+                width: 96%;
+                display: flex;
+                flex-direction: row;
+                padding-top: 0px;
+                gap: 15px;
+
+                &-up {
+                    
+                    text-align: center;
+                    display: flex;
+
+                    h2,
+                    h3,
+                    p {
+                        padding: 0px;
+                    }
+                }
+
+
+
+
+                &__down {
+                    display: flex;
+
+                    button {
+                        transition: 0s;
+
+                        &:hover {
+                            transform: scale(1.0);
+                        }
+                    }
+
+                    &-first {
+                        width: 40%;
+                    }
+
+                    &-second {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 840px) {
+        .farmers {
+            &__content {
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__right {
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+
+                &-up {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    h3 {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                        font-size: 40px;
+                    }
+                }
+
+                &-down {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

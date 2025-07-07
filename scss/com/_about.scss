@@ -1,0 +1,23 @@
+@use '../vars/vars.scss' as *;
+
+.about {
+    background-image: url(/images/aboutbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__content {
+        width: 100%;
+        padding: 150px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        
+        font-size: 80px;
+        font-weight: 800;
+        color: $title;
+        
+    }
+}
