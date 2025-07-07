@@ -30,12 +30,12 @@
             h2 {
                 padding-bottom: 15px;
                 font-size: 36px;
-                color: #7EB693;
+                color: $cursive;
                 font-family: "Yellowtail";
             }
 
             h3 {
-                @include title;
+                @include heading_h2;
                 max-width: 702px;
                 color: $title;
                 padding-bottom: 25px;
@@ -46,7 +46,7 @@
                 margin: 0;
                 max-width: 690px;
                 color: $description;
-                @include description;
+                @include paragraph;
 
             }
         }
@@ -97,14 +97,14 @@
                     flex-direction: column;
 
                     h2 {
-                        @include title-2;
+                        @include heading_h6;
                         max-width: 320px;
                         color: $title;
 
                     }
 
                     p {
-                        @include description;
+                        @include paragraph;
                         max-width: 444px;
                         color: $description;
                     }
@@ -134,14 +134,14 @@
                             font-weight: 800;
                             max-width: 220px;
                             line-height: 100%;
-                            color: #274C5B;
+                            color: $title;
                         }
 
                         p {
                             font-size: 18px;
                             line-height: 165%;
                             max-width: 444px;
-                            color: #525C60;
+                            color: $description;
                         }
                     }
                 }
