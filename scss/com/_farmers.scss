@@ -1,4 +1,4 @@
-@use '../mixins/mixins.scss' as *;
+@use '../mixins/mixins' as *;
 @use '../vars/vars.scss' as *;
 
 .farmers {
@@ -29,9 +29,8 @@
 
             h2 {
                 padding-bottom: 15px;
-                font-size: 36px;
                 color: $cursive;
-                font-family: "Yellowtail";
+                @include cursive;
             }
 
             h3 {
@@ -39,7 +38,6 @@
                 max-width: 702px;
                 color: $title;
                 padding-bottom: 25px;
-
             }
 
             p {
@@ -47,7 +45,6 @@
                 max-width: 690px;
                 color: $description;
                 @include paragraph;
-
             }
         }
 
