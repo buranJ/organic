@@ -1,9 +1,10 @@
 @use '../vars/vars' as *;
 
 .about {
-    background-image: url(/organic/src/imgs/aboutbackground.png);
+    background-image: url(/src/imgs/aboutbackground.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     &__content {
         width: 100%;

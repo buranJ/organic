@@ -28,12 +28,14 @@
             flex-direction: column;
 
             h2 {
+                margin: 0;
                 padding-bottom: 15px;
                 color: $cursive;
                 @include cursive;
             }
 
             h3 {
+                 margin: 0;
                 @include heading_h2;
                 max-width: 702px;
                 color: $title;
@@ -53,6 +55,7 @@
             flex-direction: column;
             gap: 30px;
             padding-top: 20px;
+            padding-bottom: 30px;
 
             button {
                 display: flex;
