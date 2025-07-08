@@ -327,8 +327,6 @@ a {
     padding: 0px;
   }
   .farmers__right-up {
-    padding-right: 10px;
-    padding-left: 10px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -495,6 +493,11 @@ a {
   align-items: center;
 }
 .about h2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-size: 80px;
   font-weight: 800;
   color: #274C5B;
