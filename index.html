@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Organic</title>
 </head>
@@ -195,6 +196,29 @@
         </section>
     </main>
 
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "horizontal",
+            mousewheel: {
+                forceToAxis: true,
+                invert: false,
+                sensitivity: 1,
+                releaseOnEdges: true,
+                thresholdDelta: 30,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    
 </body>
+
 
 </html>
