@@ -1283,4 +1283,23 @@ a {
   .reason__top__right {
     width: 85%;
   }
+}
+.service {
+  background: url(../src/imgs/background_service.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.service__content {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+}
+.service__title {
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  padding: 184px 0px;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */

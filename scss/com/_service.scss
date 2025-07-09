@@ -1,0 +1,21 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars' as *;
+
+.service {
+    background: url(../src/imgs/background_service.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content{
+        display: flex;
+        justify-content: center;
+        height: 450px;
+    }
+    &__title{
+        @include display_h1;
+        color: $title;
+        padding: 184px 0px;
+        margin: 0;
+    }
+
+}
