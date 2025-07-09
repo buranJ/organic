@@ -1,12 +1,9 @@
 @use '../mixins/mixins' as *;
 @use '../vars/vars.scss' as *;
-
 .farmers {
     background-color: #f9f8f8;
     background-repeat: no-repeat;
     background-position: center;
-
-
     &__content {
         display: flex;
     }
