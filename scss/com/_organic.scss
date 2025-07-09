@@ -1,0 +1,253 @@
+@use '../mixins/mixins' as *;
+
+
+.organic {
+    background-color: #274C5B;
+    padding: 200px 260px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__top {
+        width: 100%;
+
+        &-offer {
+            @include cursive();
+            color: #7EB693;
+            max-width: 117px;
+        }
+
+        &-title {
+            @include heading-h2();
+            color: #FFFFFF;
+            max-width: 580px;
+            margin-top: 8px;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 28px 39px;
+            height: 79px;
+            background-color: #EFD372;
+            color: #274C5B;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &-arr {
+            background-color: #274C5B;
+            border-radius: 100px;
+            padding: 8px;
+            border: 0;
+        }
+
+    }
+
+
+    &__cards {
+        display: flex;
+        gap: 20px;
+        max-width: 1400px;
+
+        &-content {
+            background-color: #F9F8F8;
+            border-radius: 30px;
+            max-width: 335px;
+            padding: 30px;
+            width: 100%;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &-img {
+            max-width: 100%;
+            height: 270px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &-top {
+            @include font(15px, 600, 20px);
+            color: #FFFFFF;
+            background-color: #274C5B;
+            border-radius: 8px;
+            padding: 5px 12px;
+            max-width: 96px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        &-title {
+            @include font(20px, 600, 23px);
+            font-family: 'Roboto', sans-serif;
+            color: #274C5B;
+            max-width: 142px;
+            margin-bottom: 13px;
+        }
+
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #DEDDDD;
+            justify-content: space-between;
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        &-price {
+            @include font(15px, 600, 20px);
+            color: #B8B8B8;
+            text-decoration: line-through;
+            max-width: 48px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        &-sale {
+            @include font(17px, 800, 25px);
+            color: #274C5B;
+            max-width: 57px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+}
+
+
+@media(max-width:1500px) {
+    .organic {
+        padding: 100px 160px;
+
+        &__top {
+            &-offer {
+                @include font(25px, 400, 40px);
+            }
+
+            &-title {
+                @include font(32px, 600, 50px);
+            }
+
+            &-btn {
+                padding: 18px 20px;
+                height: 60px;
+                font-size: 16px; 
+            }
+        }
+
+        &__cards {
+            max-width: 1000px;
+
+            &-content {
+
+                max-width: 170px;
+
+            }
+
+            &-top {
+                @include font(13px, 600,17px);
+                max-width: 96px;
+            }
+
+            &-title {
+                @include font(16px, 600, 20px);
+                max-width: 100px;
+            }
+
+            &-price {
+                @include font(12px, 500, 17px);
+                max-width: 38px;
+            }
+
+            &-sale {
+                @include font(14px, 800, 21px);
+                max-width: 47px;
+            }
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .organic {
+        padding: 100px 90px;
+
+        &__top {
+
+            &-btn {
+                padding: 15px 18px; 
+                height: 55px;
+                font-size: 14px; 
+                gap: 5px; 
+            }
+
+            &-arr {
+                padding: 5px;
+            }
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-content {
+
+                max-width: 270px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:670px) {
+    .organic {
+        padding: 90px 50px;
+
+        &__top {
+            &-offer {
+                @include font(20px, 400, 20px);
+            }
+
+            &-title {
+                @include font(24px, 600, 24px);
+            }
+
+            &-btn {
+                padding: 12px 15px;
+                height: 50px;
+                font-size: 13px;
+                gap: 4px;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
