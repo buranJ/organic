@@ -84,6 +84,11 @@
             height: 211px;
             border-radius: 50%;
             border: 2px solid rgba(126, 182, 147, 1);
+            transition: 0.6s;
+            &:hover{
+                scale: 1.1;
+                border: 2px solid rgba(35, 198, 20, 0.584);
+            }
 
             &-inner {
                 display: flex;

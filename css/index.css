@@ -531,6 +531,11 @@ a {
   height: 211px;
   border-radius: 50%;
   border: 2px solid rgb(126, 182, 147);
+  transition: 0.6s;
+}
+.review__bottom__circle:hover {
+  scale: 1.1;
+  border: 2px solid rgba(35, 198, 20, 0.584);
 }
 .review__bottom__circle-inner {
   display: flex;
