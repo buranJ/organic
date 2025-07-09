@@ -651,7 +651,8 @@ a {
   max-width: 339px;
   border: 0;
   border-radius: 49px;
-  column-gap: 7px;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
 }
 .reason__top__left-box img {
   margin-left: 27px;
