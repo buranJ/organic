@@ -1,14 +1,13 @@
-@use './vars/vars' ;
 @use './mixins/mixins';
+@use './vars/vars' ;
 @use './com/zero' ;
+@use './com/swiper';
 @use './com/header';
-@use'./com/hero';
+@use './com/hero';
 @use './com/farmers';
-@use './com/about';
-
+@use './com/review';
 @use './com/get';
-
-
-@use'./com/subscribe';
+// @use './com/subscribe';
 @use './com/experts';
-
+@use './com/about';
+@use './com/reason';

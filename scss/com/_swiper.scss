@@ -1,0 +1,30 @@
+    @use '../mixins/mixins' as *;
+    @use '../vars/vars' as *;
+
+    .swiper {
+        max-width: 1108px;
+        height: 100%;
+        margin: 0;
+
+        &-wrapper {
+            width: 100%;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+        width: 100% !important;
+    }
+
+    .swiper-pagination {
+        position: static;
+        padding-top: 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: rgba(126, 182, 147, 1);
+    }
