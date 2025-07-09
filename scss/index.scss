@@ -1,12 +1,14 @@
-@use './vars/vars.scss' as *;
-@use './mixins/mixins.scss' as *;
+@use './vars/vars' ;
+@use './mixins/mixins';
 @use './com/zero' ;
 @use './com/header';
 @use'./com/hero';
 @use './com/farmers';
 @use './com/about';
-@use './com/swiper';
+
 @use './com/get';
-@use './com/review';
-@use './com/reason';
+
+
 @use'./com/subscribe';
+@use './com/experts';
+
