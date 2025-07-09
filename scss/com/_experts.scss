@@ -1,0 +1,200 @@
+@use'../mixins/mixin' as *;
+
+.experts {
+    padding: 177px 260px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 42px;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__team {
+        @include cursive();
+        color: #7EB693;
+        max-width: 69px;
+    }
+
+    &__title {
+        @include heading_h2();
+        color: #274C5B;
+        text-align: center;
+        max-width: 454px;
+    }
+
+    &__description {
+        @include paragraph();
+        color: #525C60;
+        text-align: center;
+        max-width: 852px;
+        margin-top: 16px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        max-width: 1400px;
+        gap: 27px;
+
+        &-content {
+            max-width: 449px;
+            background-color: #F9F8F8;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &-name {
+            @include heading_h6();
+            color: #274C5B;
+            max-width: 192px;
+            margin-top: 35px;
+        }
+
+        &-job {
+            @include font(22px, 400, 30px);
+            color: #7EB693;
+            max-width: 58px;
+            font-family: 'Yellowtail';
+            margin-top: 2px;
+        }
+
+        &-bottom {
+            padding: 35px 28px;
+
+            &-content {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &-img {
+                max-width: 22px;
+            }
+        }
+
+    }
+}
+
+@media(max-width:1500px) {
+    .experts {
+        &__description {
+            max-width: 700px;
+        }
+
+        &__cards {
+            max-width: 1000px;
+
+            &-photo {
+                max-width: 329px;
+            }
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .experts {
+        padding: 80px 160px;
+
+        &__top {
+            max-width: 600px;
+        }
+
+        &__team {
+            @include font(30px, 400,39px);
+        }
+
+        &__title {
+            @include font(40px, 700, 49px);
+        }
+
+        &__description {
+            max-width: 100%;
+        }
+
+        &__cards {
+            max-width: 700px;
+
+            &-photo {
+                max-width: 229px;
+            }
+
+            &-name {
+                @include font(20px, 600, 20px);
+                max-width: 192px;
+                margin-top: 10px;
+            }
+
+            &-job {
+                @include font(18px, 400, 20px);
+                max-width: 58px;
+            }
+
+            &-bottom-content {
+                margin-top: 10px;
+            }
+
+            &-logo-img {
+                max-width: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width:720px) {
+    .experts {
+        padding: 80px 20px;
+
+        &__team {
+            @include font(25px, 400, 29px);
+        }
+
+        &__title {
+            @include font(30px, 700,39px);
+        }
+
+        &__cards {
+            flex-direction: column;
+            align-items: center;
+
+            &-content {
+                width: 98%;
+            }
+
+            &-photo {
+                max-width: 100%;
+            }
+
+            &-name {
+                @include font(26px, 600, 17px);
+                max-width: 192px;
+                margin-top: 10px;
+            }
+
+            &-job {
+                @include font(28px, 400, 17px);
+                max-width: 58px;
+            }
+
+            &-logo-img {
+                max-width: 28px;
+            }
+        }
+    }
+}
