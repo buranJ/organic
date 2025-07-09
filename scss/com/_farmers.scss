@@ -1,4 +1,4 @@
-@use '../mixins/mixins.scss' as *;
+@use '../mixins/mixins' as *;
 @use '../vars/vars.scss' as *;
 
 .farmers {
@@ -28,26 +28,25 @@
             flex-direction: column;
 
             h2 {
+                margin: 0;
                 padding-bottom: 15px;
-                font-size: 36px;
-                color: #7EB693;
-                font-family: "Yellowtail";
+                color: $cursive;
+                @include cursive;
             }
 
             h3 {
-                @include title;
+                 margin: 0;
+                @include heading_h2;
                 max-width: 702px;
                 color: $title;
                 padding-bottom: 25px;
-
             }
 
             p {
                 margin: 0;
                 max-width: 690px;
                 color: $description;
-                @include description;
-
+                @include paragraph;
             }
         }
 
@@ -56,6 +55,7 @@
             flex-direction: column;
             gap: 30px;
             padding-top: 20px;
+            padding-bottom: 30px;
 
             button {
                 display: flex;
@@ -97,14 +97,14 @@
                     flex-direction: column;
 
                     h2 {
-                        @include title-2;
+                        @include heading_h6;
                         max-width: 320px;
                         color: $title;
 
                     }
 
                     p {
-                        @include description;
+                        @include paragraph;
                         max-width: 444px;
                         color: $description;
                     }
@@ -134,14 +134,14 @@
                             font-weight: 800;
                             max-width: 220px;
                             line-height: 100%;
-                            color: #274C5B;
+                            color: $title;
                         }
 
                         p {
                             font-size: 18px;
                             line-height: 165%;
                             max-width: 444px;
-                            color: #525C60;
+                            color: $description;
                         }
                     }
                 }
@@ -278,8 +278,6 @@
                 padding: 0px;
 
                 &-up {
-                    padding-right: 10px;
-                    padding-left: 10px;
                     width: 100%;
                     justify-content: center;
                     align-items: center;
