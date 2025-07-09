@@ -1302,4 +1302,125 @@ a {
   color: #274C5B;
   padding: 184px 0px;
   margin: 0;
+}
+
+.nuts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 202px 0px;
+}
+.nuts-decor {
+  font-size: 36px;
+  font-family: "Yellowtail", sans-serif;
+  color: #7EB693;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.nuts-title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  max-width: 482px;
+  text-align: center;
+  margin-top: 0px;
+}
+.nuts__base {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.nuts__base h3 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #274C5B;
+  margin: 5px 0px;
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+.nuts__base p {
+  font-size: 18px;
+  line-height: 165%;
+  font-family: "Open Sans", sans-serif;
+  color: #525C60;
+  margin-top: 0px;
+  margin-bottom: 39px;
+}
+.nuts__base-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+  max-width: 396px;
+  padding-top: 108px;
+}
+.nuts__base-left img {
+  width: 53px;
+  height: 55px;
+}
+.nuts__base__middle {
+  max-width: 503px;
+}
+.nuts__base__middle-img {
+  width: 100%;
+  min-width: 440px;
+  height: auto;
+}
+.nuts__base-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 396px;
+  padding-top: 108px;
+}
+.nuts__base-right img {
+  width: 53px;
+  height: 55px;
+}
+.nuts-bottom {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(39, 76, 91);
+  width: 220px;
+  height: 80px;
+  border-radius: 16px;
+  transition: 0.6s;
+}
+.nuts-bottom:hover {
+  scale: 1.1;
+}
+.nuts-bottom span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #274C5B;
+  margin-left: 32px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1020px) {
+  .nuts__content {
+    padding: 100px 0px;
+  }
+  .nuts__base {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuts__base-left {
+    align-items: center;
+    text-align: center;
+    max-width: none;
+    width: 90%;
+    padding-top: 20px;
+  }
+  .nuts__base__middle-img {
+    min-width: 10px;
+  }
+  .nuts__base-right {
+    align-items: center;
+    text-align: center;
+    max-width: none;
+    width: 90%;
+    padding-top: 0px;
+  }
 }/*# sourceMappingURL=index.css.map */
