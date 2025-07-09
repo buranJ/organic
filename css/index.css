@@ -124,6 +124,36 @@ a {
   margin-right: 50px;
 }
 
+.header__nav ul {
+  padding-left: 0;
+}
+.header__link__sub {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  position: relative;
+  transition: 1s;
+}
+.header__link__sub:hover .header__link__sub-menu {
+  display: block;
+  top: 100%;
+  left: 60%;
+  border-radius: 5px;
+}
+.header__link__sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  background-color: orange;
+  width: 170%;
+  row-gap: 10px;
+}
+.header__link__sub-menu a {
+  color: #274C5B;
+  font-size: 16px;
+}
+
 @media (max-width: 1400px) {
   .header__catalog {
     display: none;

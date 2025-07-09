@@ -73,6 +73,7 @@
         border-radius: 33px;
         height: 66px;
         width: 156px;
+
         &-btn {
             background-color: #274C5B;
             border-radius: 90px;
@@ -89,6 +90,50 @@
         margin-right: 50px;
     }
 }
+
+// БРО прости что залез сюда , мне нужны страницы для того чтоб сделать домаху 
+// а для этого нужен хэдер чтоб было откуда брать ссылки)
+.header {
+    &__nav {
+
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    &__link {
+        &__sub {
+            display: flex;
+            column-gap: 10px;
+            position: relative;
+            transition: 1s;
+
+            &:hover .header__link__sub-menu {
+                display: block;
+                top: 100%;
+                left: 60%;
+                border-radius: 5px;
+
+            }
+
+            &-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 60%;
+                background-color: orange;
+                width: 170%;
+                row-gap: 10px;
+
+                a {
+                    color: #274C5B;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
 
 @media(max-width:1400px) {
     .header__catalog {
