@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     &__content {
         width: 100%;
         padding: 150px 0px;
@@ -14,7 +13,6 @@
         justify-content: center;
         align-items: center;
     }
-
     h2 {
         margin: 0;
         display: flex;
@@ -22,8 +20,7 @@
         align-items: center;
         width: 100%;
         @include display_h1;
-        color: $title;
-        
+        color: $title;    
     }
 }
 @media (max-width:490px) {

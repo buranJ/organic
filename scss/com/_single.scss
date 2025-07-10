@@ -2,12 +2,10 @@
 @use '../vars/vars.scss' as *;
 
 .single {
-
     background-image: url(/src/imgs/singlebackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     &__content {
         width: 100%;
         padding: 150px 0px;
@@ -15,7 +13,6 @@
         justify-content: center;
         align-items: center;
     }
-
     h2 {
         margin: 0;
         display: flex;
@@ -26,7 +23,6 @@
         color: $title;
     }
 }
-
 @media (max-width:490px) {
     .single {
         h2 {

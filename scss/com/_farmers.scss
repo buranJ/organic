@@ -20,8 +20,6 @@
         display: flex;
         flex-direction: column;
 
-
-
         &-up {
             display: flex;
             flex-direction: column;
@@ -74,7 +72,7 @@
                 transition: 0.5s;
 
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
             }
 
@@ -87,6 +85,7 @@
                     height: 101px;
                     transition: 0.5s;
                     cursor: pointer;
+
                     &:hover {
                         transform: scale(1.2);
                     }
@@ -100,7 +99,6 @@
                         @include heading_h6;
                         max-width: 320px;
                         color: $title;
-
                     }
 
                     p {
@@ -127,7 +125,6 @@
                     &-description {
                         display: flex;
                         flex-direction: column;
-
 
                         h2 {
                             font-size: 25px;
@@ -200,100 +197,99 @@
             }
         }
     }
+}
 
+@media (max-width: 1000px) {
+    .farmers {
 
-    @media (max-width: 1000px) {
-        .farmers {
+        &__content {
+            display: flex;
+            flex-direction: column;
 
-            &__content {
+        }
+
+        &__left {
+            width: 96%;
+            height: auto;
+        }
+
+        &__right {
+            padding-bottom: 20px;
+            width: 96%;
+            display: flex;
+            flex-direction: row;
+            padding-top: 0px;
+            gap: 15px;
+
+            &-up {
+
+                text-align: center;
                 display: flex;
-                flex-direction: column;
 
+                h2,
+                h3,
+                p {
+                    padding: 0px;
+                }
             }
 
-            &__left {
-                width: 96%;
-                height: auto;
-            }
 
-            &__right {
-                padding-bottom: 20px;
-                width: 96%;
+
+
+            &__down {
                 display: flex;
-                flex-direction: row;
-                padding-top: 0px;
-                gap: 15px;
 
-                &-up {
+                button {
+                    transition: 0s;
 
-                    text-align: center;
-                    display: flex;
-
-                    h2,
-                    h3,
-                    p {
-                        padding: 0px;
+                    &:hover {
+                        transform: scale(1.0);
                     }
                 }
 
+                &-first {
+                    width: 40%;
+                }
 
-
-
-                &__down {
-                    display: flex;
-
-                    button {
-                        transition: 0s;
-
-                        &:hover {
-                            transform: scale(1.0);
-                        }
-                    }
-
-                    &-first {
-                        width: 40%;
-                    }
-
-                    &-second {
-                        width: 40%;
-                    }
+                &-second {
+                    width: 40%;
                 }
             }
         }
     }
+}
 
-    @media (max-width: 840px) {
-        .farmers {
-            &__content {
-                padding-bottom: 40px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+@media (max-width: 840px) {
+    .farmers {
+        &__content {
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+
+            &-up {
+                width: 100%;
                 justify-content: center;
+                align-items: center;
+
+                h3 {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    font-size: 40px;
+                }
             }
 
-            &__right {
-                display: flex;
-                flex-direction: column;
-                padding: 0px;
-
-                &-up {
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-
-                    h3 {
-                        margin-top: 20px;
-                        margin-bottom: 30px;
-                        font-size: 40px;
-                    }
-                }
-
-                &-down {
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                }
+            &-down {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

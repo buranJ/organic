@@ -1,0 +1,91 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.product {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 90px 100px;
+    }
+
+    &__up {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        button {
+            @include font (25px, 700, 100%);
+            color: $title;
+            background-color: #EFF6F1;
+            max-width: 363px;
+            padding: 23px 57px;
+            border-style: none;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $title;
+                color: white;
+            }
+        }
+    }
+
+    &__down {
+        p {
+            @include paragraph;
+            color: $description;
+            text-align: center;
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width:880px) {
+    .product {
+        &__content {
+            margin: 50px 50px;
+        }
+
+        &__up {
+            button {
+                @include font (20px, 600, 100%);
+                padding: 16px 37px;
+            }
+        }
+    }
+}
+
+@media (max-width:615px) {
+    .product {
+        &__content {
+            margin: 40px 20px;
+        }
+        &__up {
+            button {
+                @include font (15px, 700, 100%);
+            }
+        }
+        &__down {
+            p {
+                display: flex;
+                justify-content: flex-start;
+                @include font (15px, 400, 150%);
+            }
+        }
+    }
+}
+@media (max-width: 475px) {
+    .product {
+        &__up {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button {
+                width: 88%;
+            }
+        }
+    }
+}
