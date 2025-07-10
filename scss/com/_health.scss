@@ -1,0 +1,162 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.health {
+    &__content {
+        display: flex;
+        padding: 83px 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__left {
+        width: 50%;
+
+        h2 {
+            background-color: $orbtn;
+            color: white;
+            @include heading_h7;
+            max-width: 73px;
+            padding: 5px 12px;
+            text-align: center;
+            border-radius: 8px;
+
+        }
+
+        img {
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+
+        &-up {
+            &-title {
+                @include font (40px, 600, 100%);
+                color: $title;
+                max-width: 382px;
+            }
+
+            &-price {
+                gap: 15px;
+                display: flex;
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #B8B8B8;
+                    text-decoration: line-through;
+                }
+
+                h3 {
+                    color: $title;
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                @include paragraph;
+                color: $description;
+                padding-top: 27px;
+            }
+        }
+
+        &-down {
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+
+            h2 {
+                @include font (20px, 700, 100%);
+                color: $title;
+
+            }
+
+            input {
+                @include font (20px, 700, 100%);
+                color: $title;
+                padding: 28px 5px;
+                border-color: $title;
+                border-radius: 12px;
+                text-align: center;
+                max-width: 134px;
+
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include font (20px, 700, 100%);
+                color: white;
+                border: 0;
+                border-radius: 16px;
+                background-color: #274C5B;
+                max-width: 213px;
+                padding: 28px 19px;
+                gap: 5px;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1030px) {
+    .health {
+        &__left {
+            width: 40%;
+        }
+
+        &__right {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .health {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:560px) {
+    .health {
+        &__content {
+            padding: 55px 15px;
+            display: flex;
+            
+        }
+        &__right-down {
+            display: flex;
+            flex-direction: column;
+            button {
+                width: 98%;
+            }
+        }
+
+    }
+}

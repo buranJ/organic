@@ -40,6 +40,12 @@
     font-family: "Roboto",sans-serif;
 }
 
+@mixin heading_h7 () {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
 @mixin paragraph(){
     font-size: 18px;
     line-height: 165%;

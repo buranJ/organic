@@ -1,4 +1,5 @@
-@use '../vars/vars' as *;
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
 
 .about {
     background-image: url(../src/imgs/aboutbackground.png);
@@ -20,9 +21,15 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        font-size: 80px;
-        font-weight: 800;
+        @include display_h1;
         color: $title;
         
+    }
+}
+@media (max-width:490px) {
+    .about {
+        h2 {
+            @include font (50px, 800, 100%);
+        }
     }
 }
