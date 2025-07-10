@@ -1,7 +1,7 @@
-@use '../vars/vars' as *;
+@use '../vars/vars.scss' as *;
 
-.about {
-    background-image: url(../src/imgs/aboutbackground.png);
+.single {
+    background-image: url(/src/imgs/singlebackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,6 +23,5 @@
         font-size: 80px;
         font-weight: 800;
         color: $title;
-        
     }
 }

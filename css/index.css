@@ -305,6 +305,7 @@ a {
   background-color: #274C5B;
   width: 40%;
   padding: 28px 49px;
+  cursor: pointer;
   transition: 0.5s;
 }
 .farmers__right-down button:hover {
@@ -318,6 +319,7 @@ a {
   width: 101px;
   height: 101px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .farmers__right-down-first img:hover {
   transform: scale(1.2);
@@ -1082,7 +1084,7 @@ a {
   }
 }
 .about {
-  background-image: url(/src/imgs/aboutbackground.png);
+  background-image: url(../src/imgs/aboutbackground.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1423,4 +1425,27 @@ a {
     width: 90%;
     padding-top: 0px;
   }
+}
+.single {
+  background-image: url(/src/imgs/singlebackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.single__content {
+  width: 100%;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single h2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 80px;
+  font-weight: 800;
+  color: #274C5B;
 }/*# sourceMappingURL=index.css.map */
