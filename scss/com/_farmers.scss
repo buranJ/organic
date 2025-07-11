@@ -96,12 +96,15 @@
                     flex-direction: column;
 
                     h2 {
+                        margin: 0;
                         @include heading_h6;
                         max-width: 320px;
                         color: $title;
                     }
 
                     p {
+                        padding-top: 7px;
+                        margin: 0;
                         @include paragraph;
                         max-width: 444px;
                         color: $description;
@@ -127,6 +130,7 @@
                         flex-direction: column;
 
                         h2 {
+                            margin: 0;
                             font-size: 25px;
                             font-weight: 800;
                             max-width: 220px;
@@ -135,6 +139,8 @@
                         }
 
                         p {
+                            padding-top: 7px;
+                            margin: 0;
                             font-size: 18px;
                             line-height: 165%;
                             max-width: 444px;

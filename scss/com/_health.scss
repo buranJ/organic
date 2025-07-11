@@ -38,6 +38,7 @@
             &-price {
                 gap: 15px;
                 display: flex;
+                align-items: center;
 
                 h2 {
                     font-size: 20px;
@@ -91,8 +92,8 @@
                 border: 0;
                 border-radius: 16px;
                 background-color: #274C5B;
-                max-width: 213px;
-                padding: 28px 19px;
+                max-width: 243px;
+                padding: 28px 39px;
                 gap: 5px;
                 cursor: pointer;
                 transition: 0.5s;
