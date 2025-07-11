@@ -1165,6 +1165,7 @@ a {
 }
 .reason__top__right {
   width: 50%;
+  padding-top: 13px;
 }
 .reason__top__right img {
   width: 100%;
