@@ -1,0 +1,118 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.related {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        @include heading_h2;
+        color: $title;
+        text-align: center;
+    }
+
+    &__products {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+
+        &-card {
+            margin-top: 40px;
+            max-width: 335px;
+            background-color: #F9F8F8;
+            border-radius: 30px;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #dbf5d8
+            }
+
+            &-top {
+                padding-top: 30px;
+                @include heading_h7;
+                background-color: $title;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 8px;
+                max-width: 96px;
+                text-align: center
+            }
+
+            &-title {
+                padding-left: 30px;
+                @include font (20px, 600, 100%);
+                color: $title;
+                font-family: "Roboto", sans-serif;
+            }
+
+            &-numbers {
+                padding-left: 30px;
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    @include heading_h7;
+                    color: #B8B8B8;
+                    text-decoration: line-through;
+                }
+
+                h3 {
+                    @include font (18px, 700, 100%);
+                    color: $title;
+                }
+
+                img {
+                    padding-left: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1410px) {
+    .related {
+        &__products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .related {
+        &__products {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .related {
+        &__products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-card {
+                width: 96%;
+                transition: 0s;
+                &:hover {
+                    transform:scale(1.0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .related {
+        &__title {
+           @include heading_h3; 
+        }
+    }
+}

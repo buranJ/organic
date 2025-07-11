@@ -309,7 +309,7 @@ a {
   transition: 0.5s;
 }
 .farmers__right-down button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .farmers__right-down-first {
   display: flex;
@@ -349,10 +349,10 @@ a {
 .farmers__right-down-second img {
   width: 101px;
   height: 101px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .farmers__right-down-second img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .farmers__right-down-second img-description {
   display: flex;
@@ -405,10 +405,6 @@ a {
   }
   .farmers__right button {
     width: 90%;
-    transition: 0s;
-  }
-  .farmers__right button:hover {
-    transform: scale(1);
   }
 }
 @media (max-width: 1000px) {
@@ -1686,5 +1682,109 @@ a {
   }
   .product__up button {
     width: 88%;
+  }
+}
+.related__content {
+  display: flex;
+  flex-direction: column;
+}
+.related__title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  text-align: center;
+}
+.related__products {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+.related__products-card {
+  margin-top: 40px;
+  max-width: 335px;
+  background-color: #F9F8F8;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.related__products-card:hover {
+  transform: scale(1.1);
+  background-color: #dbf5d8;
+}
+.related__products-card-top {
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  background-color: #274C5B;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  max-width: 96px;
+  text-align: center;
+}
+.related__products-card-title {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #274C5B;
+  font-family: "Roboto", sans-serif;
+}
+.related__products-card-numbers {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.related__products-card-numbers h2 {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #B8B8B8;
+  text-decoration: line-through;
+}
+.related__products-card-numbers h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #274C5B;
+}
+.related__products-card-numbers img {
+  padding-left: 80px;
+}
+
+@media (max-width: 1410px) {
+  .related__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1080px) {
+  .related__products {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 730px) {
+  .related__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .related__products-card {
+    width: 96%;
+    transition: 0s;
+  }
+  .related__products-card:hover {
+    transform: scale(1);
+  }
+}
+@media (max-width: 400px) {
+  .related__title {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
   }
 }/*# sourceMappingURL=index.css.map */

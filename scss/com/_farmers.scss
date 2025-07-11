@@ -72,7 +72,7 @@
                 transition: 0.5s;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
             }
 
@@ -116,10 +116,10 @@
                 img {
                     width: 101px;
                     height: 101px;
-                    transition: 0.5s;
+                    transition: 0.4s;
 
                     &:hover {
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
 
                     &-description {
@@ -189,11 +189,6 @@
 
             button {
                 width: 90%;
-                transition: 0s;
-
-                &:hover {
-                    transform: scale(1.0);
-                }
             }
         }
     }
