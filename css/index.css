@@ -313,6 +313,7 @@ a {
   flex-direction: column;
 }
 .farmers__right-down-first-description h2 {
+  margin: 0;
   font-size: 25px;
   font-weight: 800;
   font-family: "Roboto", sans-serif;
@@ -320,6 +321,8 @@ a {
   color: #274C5B;
 }
 .farmers__right-down-first-description p {
+  padding-top: 7px;
+  margin: 0;
   font-size: 18px;
   line-height: 165%;
   font-family: "Open Sans", sans-serif;
@@ -343,6 +346,7 @@ a {
   flex-direction: column;
 }
 .farmers__right-down-second img-description h2 {
+  margin: 0;
   font-size: 25px;
   font-weight: 800;
   max-width: 220px;
@@ -350,6 +354,8 @@ a {
   color: #274C5B;
 }
 .farmers__right-down-second img-description p {
+  padding-top: 7px;
+  margin: 0;
   font-size: 18px;
   line-height: 165%;
   max-width: 444px;
@@ -1206,6 +1212,7 @@ a {
 }
 .reason__top__right {
   width: 50%;
+  padding-top: 13px;
 }
 .reason__top__right img {
   width: 100%;
@@ -1530,6 +1537,7 @@ a {
 .health__right-up-price {
   gap: 15px;
   display: flex;
+  align-items: center;
 }
 .health__right-up-price h2 {
   font-size: 20px;
@@ -1583,8 +1591,8 @@ a {
   border: 0;
   border-radius: 16px;
   background-color: #274C5B;
-  max-width: 213px;
-  padding: 28px 19px;
+  max-width: 243px;
+  padding: 28px 39px;
   gap: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -1762,6 +1770,7 @@ a {
   font-family: "Roboto", sans-serif;
 }
 .related__products-card-numbers {
+  border-top: 1px solid #525C60;
   padding-left: 30px;
   display: flex;
   align-items: center;
