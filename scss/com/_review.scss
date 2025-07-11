@@ -20,12 +20,15 @@
     &-decor {
         @include cursive;
         color: $cursive;
+        margin-top: 0;
+        margin-bottom: 8px;
     }
 
     &-title {
         @include heading_h2;
         color: $title;
         text-align: center;
+        margin: 0;
     }
 
     &__slide-first {
@@ -49,6 +52,8 @@
             max-width: 780px;
             color: $description;
             @include paragraph;
+            margin-top: 25px;
+            margin-bottom: 0;
         }
 
         &-author {
