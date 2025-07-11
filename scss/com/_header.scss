@@ -1,4 +1,8 @@
 .header {
+    .container{
+        padding: 0 15px;
+    }
+    margin-bottom: 30px;
     &__content {
         display: flex;
         justify-content: space-between;
@@ -6,28 +10,11 @@
         margin-top: 69px;
     }
 
-    &__logo {
-        display: flex;
-        align-items: center;
-        color: #274C5B;
-        gap: 8px;
-        font-size: 38px;
-        font-family: "Roboto";
-        max-width: 198px;
-        max-height: 53px;
-
-        &-img {
-            max-width: 36px;
-            max-width: 53px;
-        }
-    }
-
     &__nav {
         display: flex;
         align-items: center;
         gap: 40px;
         text-decoration: none;
-        margin-left: 150px;
 
 
     }
@@ -68,18 +55,22 @@
     &__catalog {
         display: flex;
         align-items: center;
-        gap: 12px;
+
         border: 1px solid green;
         border-radius: 33px;
-        height: 66px;
-        width: 156px;
+
+        img {
+            margin: 5px 12px 6px 5px;
+            padding: 17px;
+        }
 
         &-btn {
             background-color: #274C5B;
             border-radius: 90px;
-            padding: 17px;
             border: none;
-            margin-left: 6px;
+        }
+        &-descr{
+            margin: 21px 23px 24px 0;
         }
     }
 
@@ -87,7 +78,6 @@
         width: 35px;
         height: 25px;
         display: none;
-        margin-right: 50px;
     }
 }
 
@@ -161,13 +151,3 @@
     }
 }
 
-@media(max-width:550px) {
-    .header__logo-item {
-        font-size: 30px;
-    }
-
-    .header__logo-img {
-        max-width: 26px;
-        max-width: 43px;
-    }
-}
