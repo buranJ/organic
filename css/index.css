@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap");
 .container-fullscreen {
   max-width: 1920px;
   margin: 0 auto;
@@ -168,7 +169,7 @@ a {
   }
 }
 .hero {
-  background-image: url(../../src/imgs/hero.jpg);
+  background-image: url(../../src/imgs/herobg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -883,6 +884,46 @@ a {
     margin: 0 auto;
   }
 }
+.subscribe {
+  margin-top: 185px;
+  margin-bottom: 105px;
+}
+.subscribe__content {
+  background-image: url("../../src/imgs/subscribebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.subscribe__title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  max-width: 357px;
+}
+.subscribe__input {
+  border-radius: 16px;
+  padding: 20px 70px 20px 20px;
+  border: none;
+  font-size: 18px;
+  font-style: italic;
+  color: #525C60;
+}
+.subscribe__btn {
+  border-radius: 16px;
+  background-color: #274C5B;
+  padding: 18px 30px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .experts {
   padding: 177px 260px;
 }
