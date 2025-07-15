@@ -1,0 +1,234 @@
+@use'../mixins/mixins' as *;
+@use'../vars/vars' as *;
+
+
+.benefits {
+    margin: 120px 0 120px 0;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 46px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__card1 {
+        background-image: url(../src/imgs/benefits1.png);
+    }
+
+    &__card2 {
+        background-image: url(../src/imgs/benefits2.png);
+    }
+
+    &__card3 {
+        background-image: url(../src/imgs/benefits3.png);
+    }
+
+    &__card4 {
+        background-image: url(../src/imgs/benefits4.png);
+    }
+
+    &__card5 {
+        background-image: url(../src/imgs/benefits5.png);
+    }
+
+    &__card6 {
+        background-image: url(../src/imgs/benefits6.png);
+    }
+
+    &__card {
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 677px;
+        height: 524px;
+        width: 100%;
+        position: relative;
+        border-radius: 32px;
+
+        &-top {
+            background-color: #FFFFFF;
+            color: #274C5B;
+            @include font(20px, 800, 100%);
+            font-family: 'Robotto';
+            max-width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 43px;
+            margin-left: 32px;
+        }
+
+        &-bottom {
+            background-color: #FFFFFF;
+            position: absolute;
+            z-index: 1;
+            bottom: -6%;
+            right: 7%;
+            max-width: 612px;
+            padding: 54px 57px;
+            border-radius: 32px;
+            box-shadow: 0px 4px 16px rgba(167, 167, 167, 0.25);
+        }
+
+        &-name {
+            @include font(18px, 400, 100%);
+            font-family: 'Robotto';
+            color: #274C5B;
+            max-width: 137px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &-title {
+            @include heading_h6();
+            color: #274C5B;
+            max-width: 465px;
+            margin-top: 19px;
+        }
+
+        &-description {
+            @include paragraph();
+            color: #525C60;
+            max-width: 444px;
+        }
+
+        &-btn {
+            background: none;
+            border: 0;
+            @include font(20px, 700, 100%);
+            font-family: 'Robotto';
+            color: #274C5B;
+            margin-top: 19px;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        &-arr {
+            background-color: #274C5B;
+            border-radius: 50%;
+            border: 0;
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .benefits {
+
+        &__card {
+            width: calc(47% - 23px);
+            max-width: none;
+
+            &-bottom {
+                max-width: 550px;
+                right: 0;
+                bottom: -5%;
+                padding: 20px;
+            }
+
+            &-name {
+                @include font(20px, 400, 100%);
+                max-width: 160px;
+            }
+
+            &-title {
+                @include font(25px, 800, 100%);
+                max-width: 550px;
+                margin-top: 16px;
+            }
+
+            &-description {
+                @include font(18px, 400, 100%);
+                max-width: 550px;
+            }
+
+            &-btn {
+                @include font(18px, 700, 100%);
+                gap: 8px;
+            }
+
+            &-arr {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .benefits {
+
+        &__content {
+            gap: 30px;
+        }
+
+        &__card {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .benefits {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        &__card {
+            width: 100%;
+            height: auto;
+            margin-top: 0;
+
+            &-top {
+                max-width: 70px;
+                height: 70px;
+                margin-top: 24px;
+                margin-left: 24px;
+                font-size: 18px;
+            }
+
+            &-bottom {
+                position: static;
+                margin-top: 70px;
+            }
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-description {
+                font-size: 16px;
+            }
+
+            &-name {
+                font-size: 16px;
+            }
+
+            &-btn {
+                font-size: 16px;
+            }
+
+            &-arr {
+                padding: 4px;
+            }
+
+        }
+    }
+}
+
+.recent {
+    background-image: url(../src/imgs/recent.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
