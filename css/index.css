@@ -979,6 +979,7 @@ a {
   border-radius: 20px;
   overflow: hidden;
   transition: 1s;
+  box-shadow: 0px 4px 16px rgba(167, 167, 167, 0.25);
 }
 .experts__cards-content:hover {
   transform: scale(1.05);
@@ -1075,7 +1076,7 @@ a {
 }
 @media (max-width: 720px) {
   .experts {
-    padding: 80px 20px;
+    padding: 80px 30px;
   }
   .experts__team {
     font-size: 25px;
