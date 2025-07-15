@@ -2050,6 +2050,10 @@ a {
   color: #274C5B;
 }
 
+.subscribeTeam {
+  margin-bottom: 120px;
+}
+
 @media (max-width: 600px) {
   .our__content {
     padding: 90px 0px;
