@@ -2024,4 +2024,38 @@ a {
     padding-top: 20px;
     font-size: 14px;
   }
+}
+.our {
+  background-image: url(../src/imgs/team_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.our__content {
+  width: 100%;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+}
+
+@media (max-width: 600px) {
+  .our__content {
+    padding: 90px 0px;
+  }
+  .our__title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
