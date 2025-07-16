@@ -1,0 +1,100 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars' as *;
+
+.goods {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        padding-bottom: 140px;
+        row-gap: 43px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 451px;
+        border-radius: 30px;
+
+        &__wall {
+            width: 100%;
+            height: 421px;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            &-first {
+                background: url(../src/imgs/goods_lemons.png);
+            }
+
+            &-second {
+                background: url(../src/imgs/goods_carrots.png);
+            }
+
+            &-third {
+                background: url(../src/imgs/goods_leafs.png);
+            }
+
+            &-fourth {
+                background: url(../src/imgs/goods_tomatoes.png);
+            }
+
+            &-fifth {
+                background: url(../src/imgs/goods_raspberries.png);
+            }
+
+            &-sixth {
+                background: url(../src/imgs/goods_oranges.png);
+            }
+
+            &-hidden {
+                visibility: hidden;
+                background-color: rgba(255, 255, 255);
+                width: 90%;
+                height: 90%;
+                border-radius: 20px;
+                opacity: 0;
+                transition: 1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    background-color: $cursive;
+                    width: 46px;
+                    height: 46px;
+                    border: 0;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &:hover .goods__card__wall-hidden {
+                opacity: 0.8;
+                visibility: visible;
+            }
+        }
+
+        &-title {
+            @include heading_h6;
+            color: $title;
+            margin-top: 21px;
+            margin-bottom: 2px;
+        }
+
+        &-decor {
+            @include cursive_mini;
+            color: $cursive;
+            margin: 0;
+        }
+    }
+}

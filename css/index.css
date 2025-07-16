@@ -1591,6 +1591,91 @@ a {
   margin: 0;
 }
 
+.goods__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 140px;
+  row-gap: 43px;
+}
+.goods__card {
+  display: flex;
+  flex-direction: column;
+  width: 451px;
+  border-radius: 30px;
+}
+.goods__card__wall {
+  width: 100%;
+  height: 421px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods__card__wall-first {
+  background: url(../src/imgs/goods_lemons.png);
+}
+.goods__card__wall-second {
+  background: url(../src/imgs/goods_carrots.png);
+}
+.goods__card__wall-third {
+  background: url(../src/imgs/goods_leafs.png);
+}
+.goods__card__wall-fourth {
+  background: url(../src/imgs/goods_tomatoes.png);
+}
+.goods__card__wall-fifth {
+  background: url(../src/imgs/goods_raspberries.png);
+}
+.goods__card__wall-sixth {
+  background: url(../src/imgs/goods_oranges.png);
+}
+.goods__card__wall-hidden {
+  visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods__card__wall-hidden a {
+  background-color: #7EB693;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods__card__wall:hover .goods__card__wall-hidden {
+  opacity: 0.8;
+  visibility: visible;
+}
+.goods__card-title {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  margin-top: 21px;
+  margin-bottom: 2px;
+}
+.goods__card-decor {
+  font-size: 22px;
+  font-family: "Yellowtail", sans-serif;
+  color: #7EB693;
+  margin: 0;
+}
+
 .single {
   background-image: url(/src/imgs/singlebackground.jpg);
   background-repeat: no-repeat;
