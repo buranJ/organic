@@ -1571,6 +1571,26 @@ a {
     margin-top: 40px;
   }
 }
+.portfolio {
+  background: url(../src/imgs/background_service.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio__content {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+}
+.portfolio__title {
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  padding: 184px 0px;
+  margin: 0;
+}
+
 .single {
   background-image: url(/src/imgs/singlebackground.jpg);
   background-repeat: no-repeat;
