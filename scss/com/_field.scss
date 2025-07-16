@@ -1,0 +1,70 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.field{
+    background: url(../src/imgs/field_background.jpg);
+    height: 1073px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    
+    &__content{
+        padding-top: 179px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        max-width: 671px;
+    }
+    &-decor{
+        @include cursive;
+        color: $cursive;
+        margin: 0;
+    }
+    &-title{
+        @include heading_h2;
+        color: $title;
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+    &-description{
+        @include paragraph;
+        color: $description;
+        margin-top: 24px;
+        margin-bottom: 50px;
+    }
+    &__link{
+        background-color: $cursive;
+        width: 107px;
+        height: 107px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px;
+        border-radius: 50%;
+
+        img{
+            width: 21px;
+            height: 24px;
+        }
+    }
+}
+
+@media (max-width:590px){
+    .field{
+        height: 800px;
+        &__content{
+            padding-top: 100px;
+        }
+        &-title{
+            @include heading_h3;
+            width: 98%;
+            margin-top: 25px;
+        }
+        &-description{
+            width: 98%;
+            margin-top: 40px;
+        }
+    }
+}
