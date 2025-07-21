@@ -2,7 +2,7 @@
 @use'../vars/vars' as *;
 
 .our {
-    background-image: url(../src/imgs/team_background.jpg);
+    background-image: url('../src/imgs/team_background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
