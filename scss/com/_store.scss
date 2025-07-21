@@ -1,0 +1,116 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars' as *;
+
+.store {
+    margin-top: 180px;
+    margin-bottom: 131px;
+
+    &__content {
+        margin-left: 200px;
+        max-width: 936px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 90%;
+
+        &-plant {
+            border-radius: 20px;
+
+        }
+    }
+
+    &__title {
+        @include heading_h2();
+        color: $title;
+        margin-top: 78px;
+
+    }
+
+    &__description {
+        @include paragraph();
+        color: $description;
+        text-align: left;
+        margin: 0;
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        &-title {
+            @include heading_h6();
+            color: $title;
+            margin: 0;
+            margin-bottom: 7px;
+        }
+
+        &-description {
+            @include paragraph();
+            color: $description;
+            max-width: 447px;
+        }
+    }
+
+    &__text {
+        background-color: #F9F8F8;
+        border-radius: 20px;
+        padding: 50px 45px;
+
+    }
+
+    &__end {
+        &-title {
+            @include heading_h4();
+            color: $title;
+            margin-bottom: 11px;
+
+        }
+
+        &-description {
+            @include paragraph();
+            color: $description;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #F9F8F8;
+        border-radius: 50px;
+        padding: 15px 53px 15px 17px;
+        font-family: "Roboto",sans-serif;
+
+
+        &-title {
+            font-size: 25px;
+            font-weight: 600;
+            color: $title;
+        }
+    }
+
+    &__number {
+        font-size: 25px;
+        font-weight: 700;
+        font-style: bold;
+        color: #FFFFFF;
+        background-color: #7EB693;
+        border-radius: 100px;
+        padding: 15px 17px;
+    }
+}
