@@ -1,0 +1,128 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars' as *;
+
+.econis {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__left {
+        display: flex;
+        align-items: flex-start;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 78px 0px 77px 89px;
+        border: 0;
+        border-radius: 30px;
+        position: absolute;
+        top: 12%;
+        left: 46%;
+        width: 36%;
+
+        &-decor {
+            @include cursive;
+            color: $cursive;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        &-title {
+            @include heading_h2;
+            color: $title;
+            margin: 0;
+        }
+
+        &-subtitle {
+            @include font (22px, 500, 100%);
+            color: $title;
+            margin-top: 35px;
+            margin-bottom: 7px;
+        }
+
+        &-description {
+            @include paragraph;
+            color: $description;
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width:1222px) {
+    .econis {
+        &__right {
+            top: 6%;
+        }
+    }
+}
+
+@media (max-width:1110px) {
+    .econis {
+        &__content {
+            flex-direction: column;
+            margin-bottom: 650px;
+        }
+
+        &__right {
+            top: 90%;
+            left: 10%;
+            width: 70%;
+            padding: 30px 40px 30px 40px;
+            text-align: center;
+            background: white;
+            box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .econis {
+        margin-bottom: 750px;
+        &__right {
+            &-title {
+                @include heading_h3;
+            }
+
+            &-subtitle {
+                @include font(20px, 500, 100%);
+            }
+        }
+    }
+}
+
+@media (max-width:570px) {
+    .econis {
+        margin-bottom: 780px;
+        &__right {
+            left: 8%;
+        }
+    }
+}
+
+@media (max-width:435px) {
+    .econis {
+        margin-bottom: 820px;
+        &__right {
+            left: 6%;
+        }
+    }
+}
+
+@media (max-width:395px) {
+    .econis {
+        margin-bottom: 950px;
+        &__right {
+            left: 5%;
+        }
+    }
+}
