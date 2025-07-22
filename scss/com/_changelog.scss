@@ -1,0 +1,31 @@
+@use'../mixins/mixins' as *;
+@use'../vars/vars' as *;
+.changelog {
+    background-image: url(/src/imgs/changelog__background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content {
+        width: 100%;
+        padding: 150px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include display_h1;
+        color: $title;    
+    }
+}
+@media (max-width:490px) {
+    .changelog {
+        h2 {
+            @include font (50px, 800, 100%);
+        }
+    }
+}

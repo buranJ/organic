@@ -3051,4 +3051,112 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.changelog {
+  background-image: url(/src/imgs/changelog__background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.changelog__content {
+  width: 100%;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.changelog h2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+}
+
+@media (max-width: 490px) {
+  .changelog h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 100%;
+  }
+}
+.webflow {
+  background-color: rgba(244, 243, 243, 0.484);
+}
+.webflow__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+.webflow__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 26px 48px;
+  background-color: white;
+  border-radius: 30px;
+}
+.webflow__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.webflow__text h2 {
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+}
+.webflow__text p {
+  font-size: 18px;
+  line-height: 165%;
+  font-family: "Open Sans", sans-serif;
+  color: #525C60;
+}
+
+@media (max-width: 670px) {
+  .webflow__box {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    padding: 26px 28px;
+  }
+  .webflow__text {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 405px) {
+  .webflow__text h2 {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+  }
+  .webflow__text p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 165%;
+  }
+}
+@media (max-width: 320px) {
+  .webflow__box {
+    padding: 40px 5px;
+  }
+  .webflow__text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 170px) {
+  .webflow img {
+    width: 88%;
+  }
 }/*# sourceMappingURL=index.css.map */
