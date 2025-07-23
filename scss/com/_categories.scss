@@ -1,0 +1,260 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.categories {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    &__arrow {
+        padding: 6px 7px;
+        background-color: #335B6B;
+        border-radius: 17px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 156px;
+        padding-bottom: 200px;
+
+        h2 {
+            @include cursive;
+            color: $cursive;
+        }
+
+        h3 {
+            @include heading_h2;
+            color: $title;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            @include font (20px, 700, 100%);
+            color: white;
+            padding: 28px 46px;
+            background-color: $title;
+            border-radius: 16px;
+            margin-top: 122px;
+            transition: 0.6s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        &-main {
+            width: 100%;
+        }
+
+        &-card {
+            background-color: hsl(0, 8%, 97%, );
+            border-radius: 30px;
+            padding: 29px 30px;
+            width: 19%;
+            transition: 0.6s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #dbf5d8;
+            }
+
+
+            h4 {
+                @include heading_h7;
+                color: white;
+                padding: 5px 12px;
+                background-color: $title;
+                border-radius: 8px;
+                width: 25%;
+                text-align: center;
+            }
+
+            p {
+                @include font (20px, 600, 100%);
+                color: $title;
+                font-family: "Roboto", sans-serif;
+            }
+
+            &-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #DEDDDD;
+                max-width: 335px;
+                padding-top: 10px;
+
+                &-left {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+
+                    h5 {
+                        text-decoration: line-through;
+                        color: #B8B8B8;
+                        @include heading_h7;
+                    }
+
+                    h6 {
+                        @include font (18px, 700, 100%);
+                        color: $title;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .categories {
+        &__content {
+            padding-top: 90px;
+        }
+
+        &__box-card {
+            width: 39%;
+        }
+    }
+}
+
+@media (max-width:770px) {
+    .categories {
+        &__content {
+            button {
+                padding: 22px 30px;
+                margin-top: 60px;
+                &:hover {
+                    transform: scale(1.0);
+                }
+            }
+        }
+
+        &__box-card {
+            &:hover {
+                transform: scale(1.0)
+            }
+            h4 {
+                @include font (13px, 600, 100%);
+            }
+        }
+    }
+}
+
+@media (max-width:655px) {
+    .categories {
+        button {
+            width: 60%;
+            @include font (25px,700, 100%);
+        }
+        &__box {
+            &-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 69%;
+                &-bottom {
+                    width: 98%;
+                }
+                h4 {
+                    @include font (20px, 700, 100%);
+                    width: 40%;
+                    padding: 10px 0px;
+                }
+                p{
+                    @include font (30px,700, 100%);
+                }
+            }
+            &-main {
+                width: 86%;
+            }
+        }
+    }
+}
+@media (max-width: 415px) {
+    .categories {
+        &__content {
+            button {
+                @include font (16px, 700, 100%);
+                padding: 18px ;
+            }
+        }
+        &__box{
+            &-card {
+                h4 {
+                    @include font (15px,700,100%);
+                }
+                p {
+                    @include font ( 20px,700, 100%);
+                }
+                h5 {
+                    @include font (13px,600, 100%);
+                }
+                h6 {
+                    @include font (15px, 700, 100%);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 315px) {
+    .categories {
+        &__rating {
+            width: 30%;
+        }
+        &__content {
+            padding-top: 10px;
+            h3 {
+                @include font (30px,800,100%);
+            }
+            button {
+                @include font (11px,600,100%);
+                width: 89%;
+                padding: 10px 0px;
+                margin-top: 15px;
+            }
+        }
+        &__box {
+            &-main {
+                width: 99%;
+            }
+            &-card {
+                padding: 5px;
+                h4 {
+                    width: 60%;
+                }
+                p {
+                    @include font (17px,700,100%)
+                }
+                &-bottom {
+                    h5{
+                        @include font (9px,600,100%);
+                    }
+                    h6 {
+                        @include font (12px,600,100%);
+
+                    }
+                }
+            }
+        }
+    }
+}

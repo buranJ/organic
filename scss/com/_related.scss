@@ -5,6 +5,7 @@
     &__content {
         display: flex;
         flex-direction: column;
+        padding-bottom: 140px;
     }
 
     &__title {
@@ -28,7 +29,7 @@
 
             &:hover {
                 transform: scale(1.1);
-                background-color: #dbf5d8
+                background-color: #dbf5d8;
             }
 
             &-top {
