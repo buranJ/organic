@@ -1,0 +1,63 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.carrot {
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        max-width: 936px;
+        padding-top: 250px;
+
+        h2,
+        h3,
+        h4 {
+            @include heading_h4;
+            color: $title;
+            font-family: "Roboto";
+            margin: 0px;
+        }
+
+        p {
+            @include paragraph;
+            color: $description;
+        }
+
+        img {
+            width: 99%;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .carrot {
+        &__box {
+            padding: 440px 30px 120px 30px;
+        }
+    }
+}
+@media (max-width:750px) {
+    .carrot {
+        &__box {
+            padding: 480px 25px 100px 25px;
+        }
+    }
+}
+@media (max-width:630px) {
+    .carrot {
+        &__box {
+            padding:690px 20px 100px 20px ;
+        }
+    }
+}
+@media (max-width:480px) {
+    .carrot {
+        &__box {
+            padding: 400px 15px 80px 15px;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars.scss' as *;
+
+.rasberry {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__top {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        background-color: white;
+        padding: 96px 82px;
+        border-radius: 50px;
+        position: absolute;
+        top: 480px;
+        width: 79%;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: 54%;
+
+        h2 {
+            margin: 0px;
+            @include display_h1;
+            color: $title;
+        }
+
+        p {
+            @include paragraph;
+            color: $description;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44%;
+
+        &-left {
+            li {
+                @include font (25px, 500, 115%);
+                color: $title;
+                font-family: "Roboto";
+                padding-top: 18px;
+            }
+        }
+
+        &-mid {
+            li {
+                @include font (25px, 500, 115%);
+                color: $title;
+                font-family: "Roboto";
+                padding-top: 18px;
+            }
+        }
+
+        &-right {
+            li {
+                @include paragraph;
+                color: $description;
+                padding-top: 18px;
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 1370px) {
+    .rasberry {
+        &__box {
+            top: 400px;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .rasberry {
+        &__box {
+            padding: 56px 52px;
+            top: 300px;
+        }
+
+        &__left {
+            width: 44%;
+        }
+
+        &__right {
+            width: 56%;
+        }
+    }
+}
+
+@media (max-width:950px) {
+    .rasberry {
+        &__box {
+            display: flex;
+            flex-direction: column;
+            top: 260px;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .rasberry {
+        &__box {
+            top: 180px;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .rasberry {
+        &__box {
+            top: 100px;
+            padding: 30px 4px;
+        }
+
+        &__left {
+            h2 {
+                @include heading_h3;
+            }
+
+            p {
+                @include font (15px, 400, 140%)
+            }
+        }
+
+        &__right {
+            &-left {
+                li {
+                    @include font (18px, 500, 115%);
+                    gap: 10px;
+                }
+            }
+
+            &-mid {
+                li {
+                    @include font (18px, 500, 115%);
+                    gap: 10px;
+                }
+            }
+
+            &-right {
+                li {
+                    @include font (12px, 400, 200%);
+                    gap: 10px;
+                }
+            }
+        }
+
+    }
+}

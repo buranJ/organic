@@ -1,0 +1,127 @@
+@use '../mixins/mixins' as *;
+@use '../vars/vars' as *;
+
+.goods {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 150px;
+        row-gap: 43px;
+        width: 98%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 451px;
+        border-radius: 30px;
+
+        &__wall {
+            width: 100%;
+            height: 421px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            &-first {
+                background: url(../src/imgs/goods_lemons.png);
+                background-size: cover;
+            }
+
+            &-second {
+                background: url(../src/imgs/goods_carrots.png);
+                background-size: cover;
+            }
+
+            &-third {
+                background: url(../src/imgs/goods_leafs.png);
+                background-size: cover;
+            }
+
+            &-fourth {
+                background: url(../src/imgs/goods_tomatoes.png);
+                background-size: cover;
+            }
+
+            &-fifth {
+                background: url(../src/imgs/goods_raspberries.png);
+                background-size: cover;
+            }
+
+            &-sixth {
+                background: url(../src/imgs/goods_oranges.png);
+                background-size: cover;
+            }
+
+            &-hidden {
+                visibility: hidden;
+                background-color: rgba(255, 255, 255);
+                width: 90%;
+                height: 90%;
+                border-radius: 20px;
+                opacity: 0;
+                transition: 1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    background-color: $cursive;
+                    width: 46px;
+                    height: 46px;
+                    border: 0;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &:hover .goods__card__wall-hidden {
+                opacity: 0.8;
+                visibility: visible;
+            }
+        }
+
+        &-title {
+            @include heading_h6;
+            color: $title;
+            margin-top: 21px;
+            margin-bottom: 2px;
+        }
+
+        &-decor {
+            @include cursive_mini;
+            color: $cursive;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width:1410px) {
+    .goods {
+        &__card {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width:700px){
+    .goods{
+        &__card{
+            width: 98%;
+        }
+    }
+}

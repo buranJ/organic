@@ -49,9 +49,11 @@
             border-radius: 20px;
             overflow: hidden;
             transition: 1s;
+            box-shadow: 0px 4px 16px rgba(167, 167, 167, 0.25);
 
             &:hover {
                 transform: scale(1.05);
+                background-color: #FFFFFF;
             }
         }
 
@@ -117,7 +119,7 @@
         }
 
         &__team {
-            @include font(30px, 400,39px);
+            @include font(30px, 400, 39px);
         }
 
         &__title {
@@ -159,14 +161,14 @@
 
 @media(max-width:720px) {
     .experts {
-        padding: 80px 20px;
+        padding: 80px 30px;
 
         &__team {
             @include font(25px, 400, 29px);
         }
 
         &__title {
-            @include font(30px, 700,39px);
+            @include font(30px, 700, 39px);
         }
 
         &__cards {

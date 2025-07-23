@@ -1,0 +1,41 @@
+@use '../mixins/mixins' as *;
+@use'../vars/vars' as *;
+
+.our {
+    background-image: url(../src/imgs/team_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        width: 100%;
+        padding: 150px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include display_h1;
+        color: $title;
+
+    }
+}
+.subscribeTeam{
+    margin-bottom: 120px;
+}
+
+@media(max-width:600px) {
+    .our {
+        &__content {
+        padding: 90px 0px;
+    }
+        &__title {
+            @include font (50px, 800, 100%);
+        }
+    }
+}
