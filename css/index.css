@@ -1168,6 +1168,120 @@ a {
     width: 110px;
   }
 }
+.econis__content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.econis__left {
+  display: flex;
+  align-items: flex-start;
+}
+.econis__left img {
+  width: 100%;
+  height: auto;
+}
+.econis__right {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 78px 0px 77px 89px;
+  border: 0;
+  border-radius: 30px;
+  position: absolute;
+  top: 12%;
+  left: 46%;
+  width: 36%;
+}
+.econis__right-decor {
+  font-size: 36px;
+  font-family: "Yellowtail", sans-serif;
+  color: #7EB693;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.econis__right-title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #274C5B;
+  margin: 0;
+}
+.econis__right-subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #274C5B;
+  margin-top: 35px;
+  margin-bottom: 7px;
+}
+.econis__right-description {
+  font-size: 18px;
+  line-height: 165%;
+  font-family: "Open Sans", sans-serif;
+  color: #525C60;
+  margin: 0;
+}
+
+@media (max-width: 1222px) {
+  .econis__right {
+    top: 6%;
+  }
+}
+@media (max-width: 1110px) {
+  .econis__content {
+    flex-direction: column;
+    margin-bottom: 650px;
+  }
+  .econis__right {
+    top: 90%;
+    left: 10%;
+    width: 70%;
+    padding: 30px 40px 30px 40px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 650px) {
+  .econis {
+    margin-bottom: 750px;
+  }
+  .econis__right-title {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+  }
+  .econis__right-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .econis {
+    margin-bottom: 780px;
+  }
+  .econis__right {
+    left: 8%;
+  }
+}
+@media (max-width: 435px) {
+  .econis {
+    margin-bottom: 820px;
+  }
+  .econis__right {
+    left: 6%;
+  }
+}
+@media (max-width: 395px) {
+  .econis {
+    margin-bottom: 950px;
+  }
+  .econis__right {
+    left: 5%;
+  }
+}
 .standard {
   background-image: url(../../src/imgs/standardbg.jpg);
   background-repeat: no-repeat;
