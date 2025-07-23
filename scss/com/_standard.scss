@@ -2,7 +2,7 @@
 @use '../vars/vars' as *;
 
 .standard {
-    background-image: url(../../imgs/standardbg.jpg);
+    background-image: url(../../src/imgs/standardbg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,7 +10,6 @@
     &__content {
         display: flex;
         justify-content: center;
-        // max-height: 450px;
         max-width: 100%
     }
 

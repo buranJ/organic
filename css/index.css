@@ -1169,7 +1169,7 @@ a {
   }
 }
 .standard {
-  background-image: url(../../imgs/standardbg.jpg);
+  background-image: url(../../src/imgs/standardbg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1309,7 +1309,7 @@ a {
   align-items: center;
 }
 .subscribe__content {
-  background-image: url(../../imgs/subscribebg.png);
+  background-image: url(../../src/imgs/subscribebg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
