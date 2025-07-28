@@ -81,6 +81,8 @@
         transition: 0.5s;
         margin-top: 58px;
         max-width: 266px;
+        display: flex;
+        align-items: center;
 
         &:hover {
             transform: scale(1.2);
