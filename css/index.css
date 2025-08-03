@@ -4181,7 +4181,7 @@ a {
 }
 .offer {
   background-color: #274C5B;
-  padding: 150px;
+  padding: 100px;
 }
 .offer__content {
   display: flex;
@@ -4200,6 +4200,7 @@ a {
   font-family: "Roboto", sans-serif;
   color: white;
   padding-bottom: 33px;
+  margin: 0;
 }
 .offer__cards {
   display: flex;

@@ -3,7 +3,7 @@
 
 .offer {
     background-color: #274C5B;
-    padding: 150px;
+    padding: 100px;
 
     &__content {
         display: flex;
@@ -21,6 +21,7 @@
         @include heading_h2();
         color: white;
         padding-bottom: 33px;
+        margin: 0;
 
     }
 
